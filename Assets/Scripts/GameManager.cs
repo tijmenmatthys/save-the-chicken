@@ -18,17 +18,25 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject _tombstonePrefab;
 
     private UIManager _uiManager;
+    private AudioManager _audioManager;
 
     public string ChickenName { get; private set; }
 
     private void Awake()
     {
         _uiManager = FindObjectOfType<UIManager>();
+        _audioManager = FindObjectOfType<AudioManager>();
     }
 
     private void Start()
     {
         Time.timeScale = 0;
+
+        if (!_audioManager.IsPlayingSound("Music"))
+            _audioManager.PlaySound("Music");
+        if (!_audioManager.IsPlayingSound("Ambience"))
+            _audioManager.PlaySound("Ambience");
+
         ChickenName = ChickenNames.GetRandomChickenName();
         SpawnTombstones();
         _uiManager.ShowLevelStartOverlay(ChickenName);
@@ -47,6 +55,7 @@ public class GameManager : MonoBehaviour
 
     public void OnConfirmLevelStartOverlay()
     {
+        _audioManager.PlaySound("Button");
         if (_enableDrops) _uiManager.ShowInstructionsDrops();
         else if (_enableFlutes) _uiManager.ShowInstructionsFlutes();
         else _uiManager.ShowInstructionsMovement();
@@ -54,6 +63,7 @@ public class GameManager : MonoBehaviour
 
     public void OnConfirmInstructions()
     {
+        _audioManager.PlaySound("Button");
         StartCoroutine(PlayStartCutscene());
     }
 
@@ -83,6 +93,7 @@ public class GameManager : MonoBehaviour
 
     public void OnStartNextLevel()
     {
+        _audioManager.PlaySound("Button");
         Time.timeScale = 1;
         ChickenNames.ResetDiedChicken();
 
@@ -95,12 +106,14 @@ public class GameManager : MonoBehaviour
 
     public void OnRestartLevel()
     {
+        _audioManager.PlaySound("Button");
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void OnQuitToMenu()
     {
+        _audioManager.PlaySound("Button");
         Time.timeScale = 1;
         ChickenNames.ResetDiedChicken();
         SceneManager.LoadScene(0);

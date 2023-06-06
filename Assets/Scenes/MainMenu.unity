@@ -587,6 +587,36 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3043964745628403278, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043964745628403278, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043964745628403278, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043964745628403278, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043964745628403278, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043964745628403278, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3662996339784972924, guid: 9380dda319b77dc4c98d6c4579d2ea44,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -831,6 +861,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180541682373280115, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180541682373280115, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180541682373280115, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1663272859}
+    - target: {fileID: 9180541682373280115, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180541682373280115, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ExitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180541682373280115, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MainMenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180541682373280115, guid: 9380dda319b77dc4c98d6c4579d2ea44,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9380dda319b77dc4c98d6c4579d2ea44, type: 3}
@@ -1265,3 +1330,72 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1006684698}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2872773267763538624
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1202035768499451010, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202035768499451010, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202035768499451010, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202035768499451010, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202035768499451010, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202035768499451010, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202035768499451010, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202035768499451010, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202035768499451010, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202035768499451010, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202035768499451010, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1357574379454819965, guid: 07e2e30f3d5c6ef439f600db33023bbd,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 07e2e30f3d5c6ef439f600db33023bbd, type: 3}

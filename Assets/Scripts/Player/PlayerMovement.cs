@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using System;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Camera _camera;
     private CharacterController _charController;
+    private AudioManager _audioManager;
     private Vector2 _inputVector = Vector2.zero;
     private Vector3 _horizontalMovement = Vector3.zero;
     private float _verticalMovement = 0f;
@@ -24,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _camera = Camera.main;
         _charController = GetComponent<CharacterController>();
+        _audioManager = FindObjectOfType<AudioManager>();
     }
 
     private void FixedUpdate()
@@ -33,6 +36,19 @@ public class PlayerMovement : MonoBehaviour
         ApplyGravity();
         ApplyModelRotation();
         Move();
+    }
+
+    private void Update()
+    {
+        UpdateMovementSound();
+    }
+
+    private void UpdateMovementSound()
+    {
+        if (_horizontalMovement.magnitude * Time.deltaTime < _charController.minMoveDistance)
+            _audioManager.StopSound("Walk");
+        else if (!_audioManager.IsPlayingSound("Walk"))
+            _audioManager.PlaySound("Walk");
     }
 
     private void Move()

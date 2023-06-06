@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3242270114641039222
 Transform:
   m_ObjectHideFlags: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b86a5de8ca005a946acaf04050d1dc12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minPlayerDistance: 2
+  _minPlayerDistance: 1.8
   _maxPlayerDistance: 17
   _maxRepulsion: 1.5
   _maxAttraction: 1.5
@@ -316,7 +316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5073133840273406154
 Transform:
   m_ObjectHideFlags: 0
@@ -538,12 +538,12 @@ PrefabInstance:
     - target: {fileID: 6701857082463925781, guid: 79fdc2b3c8b8fe9489fcce930482672d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9396927
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6701857082463925781, guid: 79fdc2b3c8b8fe9489fcce930482672d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.3420201
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6701857082463925781, guid: 79fdc2b3c8b8fe9489fcce930482672d,
         type: 3}

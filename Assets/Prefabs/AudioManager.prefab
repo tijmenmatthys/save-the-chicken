@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1357574379454819965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1202035768499451010}
+  - component: {fileID: 491403716280821554}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1202035768499451010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357574379454819965}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &491403716280821554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357574379454819965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa5c1e982f457942849b9937f05e20b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Music
+    clip: {fileID: 8300000, guid: e180247477a57b6459582b460165ae68, type: 3}
+    volume: 0.5
+    basePitch: 1
+    pitchVariation: 0
+    isLoop: 1
+    source: {fileID: 0}
+  - name: Ambience
+    clip: {fileID: 8300000, guid: c052051986eb0a8419f851caa9440244, type: 3}
+    volume: 0.5
+    basePitch: 1
+    pitchVariation: 0
+    isLoop: 1
+    source: {fileID: 0}
+  - name: Button
+    clip: {fileID: 8300000, guid: bfa4ff1d628055442b4704a599f9bc2f, type: 3}
+    volume: 0.6
+    basePitch: 1
+    pitchVariation: 0.2
+    isLoop: 0
+    source: {fileID: 0}
+  - name: Walk
+    clip: {fileID: 8300000, guid: 3ea6f428f3f6dda468789d56ca923a25, type: 3}
+    volume: 1
+    basePitch: 1
+    pitchVariation: 0
+    isLoop: 1
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: bd4926a6e02acd544b48c62e66902847, type: 3}
+    volume: 0.8
+    basePitch: 1
+    pitchVariation: 0.1
+    isLoop: 0
+    source: {fileID: 0}
+  - name: Ocarina
+    clip: {fileID: 8300000, guid: 66059472be1d0a14f8b4a16ed044cb2d, type: 3}
+    volume: 0.9
+    basePitch: 1
+    pitchVariation: 0.1
+    isLoop: 1
+    source: {fileID: 0}
+  - name: Kazoo
+    clip: {fileID: 8300000, guid: b158df44ca1e20c4caa8e0499a28ad4a, type: 3}
+    volume: 0.9
+    basePitch: 1
+    pitchVariation: 0.1
+    isLoop: 1
+    source: {fileID: 0}

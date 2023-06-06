@@ -16,6 +16,7 @@ public class PlayerFlute : MonoBehaviour
     public UnityEvent OnStartKazoo;
     public UnityEvent OnStopKazoo;
 
+    private AudioManager _audioManager;
     private PlayerResources _playerResources;
     private float _ocarinaRepulsion = 0;
     private float _kazooRepulsion = 0;
@@ -24,6 +25,7 @@ public class PlayerFlute : MonoBehaviour
 
     private void Awake()
     {
+        _audioManager = FindObjectOfType<AudioManager>();
         _playerResources = GetComponent<PlayerResources>();
         _playerResources.BreathUpdated += OnBreathUpdated;
     }
@@ -63,11 +65,14 @@ public class PlayerFlute : MonoBehaviour
         {
             _ocarinaRepulsion = -_ocarinaStrength;
             OnStartOcarina?.Invoke();
+            if (!_audioManager.IsPlayingSound("Ocarina"))
+                _audioManager.PlaySound("Ocarina");
         }
         else
         {
             _ocarinaRepulsion = 0;
             OnStopOcarina?.Invoke();
+            _audioManager.StopSound("Ocarina");
         }
     }
 
@@ -77,11 +82,14 @@ public class PlayerFlute : MonoBehaviour
         {
             _kazooRepulsion = _kazooStrength;
             OnStartKazoo?.Invoke();
+            if (!_audioManager.IsPlayingSound("Kazoo"))
+                _audioManager.PlaySound("Kazoo");
         }
         else
         {
             _kazooRepulsion = 0;
             OnStopKazoo?.Invoke();
+            _audioManager.StopSound("Kazoo");
         }
     }
 }

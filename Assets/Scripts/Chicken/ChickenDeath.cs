@@ -32,11 +32,14 @@ public class ChickenDeath : MonoBehaviour
     [SerializeField] private DeathInfo _TooMuchAttractionDeathInfo;
 
     private GameManager _gameManager;
+    private AudioManager _audioManager;
     private PlayerMovement _player;
+    private bool _hasDied = false;
 
     private void Awake()
     {
         _gameManager = FindObjectOfType<GameManager>();
+        _audioManager = FindObjectOfType<AudioManager>();
         _player = FindObjectOfType<PlayerMovement>();
     }
 
@@ -75,6 +78,10 @@ public class ChickenDeath : MonoBehaviour
 
     private void Die(DeathInfo deathInfo)
     {
+        if (_hasDied) return;
+
+        _hasDied = true;
+        _audioManager.PlaySound("Death");
         OnDeath?.Invoke();
         var tombstone = Instantiate(_tombstonePrefab, transform);
         tombstone.GetComponent<Tombstone>().SetChickenName(_gameManager.ChickenName);

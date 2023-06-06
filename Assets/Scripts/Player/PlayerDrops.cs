@@ -10,10 +10,12 @@ public class PlayerDrops : MonoBehaviour
     [SerializeField] private GameObject _lemonPrefab;
 
     private PlayerResources _resources;
+    private AudioManager _audioManager;
 
     private void Awake()
     {
         _resources = GetComponent<PlayerResources>();
+        _audioManager = FindObjectOfType<AudioManager>();
     }
 
 
@@ -22,7 +24,10 @@ public class PlayerDrops : MonoBehaviour
         if (!_enable) return;
 
         if (_resources.UseSeed())
+        {
+            _audioManager.PlaySound("Button");
             Instantiate(_seedPrefab, transform.position, Quaternion.identity);
+        }
     }
 
     public void OnDropLemon(InputValue value)
@@ -30,6 +35,9 @@ public class PlayerDrops : MonoBehaviour
         if (!_enable) return;
 
         if (_resources.UseLemon())
+        {
+            _audioManager.PlaySound("Button");
             Instantiate(_lemonPrefab, transform.position, Quaternion.identity);
+        }
     }
 }

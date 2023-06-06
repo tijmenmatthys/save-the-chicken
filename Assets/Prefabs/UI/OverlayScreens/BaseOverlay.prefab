@@ -330,8 +330,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Title Goes Here!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8be8894a000c3cd478444e1d2749d31e, type: 2}
-  m_sharedMaterial: {fileID: 8611705372569643900, guid: 8be8894a000c3cd478444e1d2749d31e,
+  m_fontAsset: {fileID: 11400000, guid: 248f114027aad4d4582e63bf260b7ca0, type: 2}
+  m_sharedMaterial: {fileID: 8611705372569643900, guid: 248f114027aad4d4582e63bf260b7ca0,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
